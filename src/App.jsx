@@ -19,7 +19,7 @@ export default function App() {
     <Router>
       <Header cartCount={cartItems.reduce((a, b) => a + b.qty, 0)} />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/PlantWeb/" element={<LandingPage />} />
         <Route path="/home" element={<HomePage addToCart={addToCart} />} />
         <Route path="/cart" element={<CartPage cartItems={cartItems} setCartItems={setCartItems} />} />
       </Routes>

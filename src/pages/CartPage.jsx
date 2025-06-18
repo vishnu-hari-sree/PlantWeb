@@ -17,7 +17,7 @@ export default function CartPage({ cartItems, setCartItems }) {
       <div className="space-y-4">
         {cartItems.map(item => (
           <div key={item.id} className="flex items-center justify-between bg-white p-4 rounded shadow">
-            <img src={"src/images/"+item.img} alt={item.name} className="h-16 w-16 object-cover" />
+            <img src={item.img} alt={item.name} className="h-16 w-16 object-cover" />
             <div className="flex-1 ml-4">
               <h3 className="font-bold">{item.name}</h3>
               <p>Total: ${item.qty * item.price}</p>

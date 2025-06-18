@@ -9,8 +9,8 @@ export default function Header({ cartCount }) {
       </div>
       <nav className="flex gap-4">
         <Link to="/home" className="hover:underline">Home</Link>
-        <Link to="/cart" className="relative">
-          🛒<span className="absolute -top-2 -right-2 bg-white text-green-600 px-2 rounded-full">{cartCount}</span>
+        <Link to="/cart" className="relative ">
+          🛒<span className="absolute -top-3 -right-3 bg-white text-green-600 px-2 rounded-full">{cartCount}</span>
         </Link>
       </nav>
     </header>
